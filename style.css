@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   .para,
+  .small-para {
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+  }
+  .para {
+    font-size: 22px;
+  }
+  .small-para {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  
+   .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  } 
+   .confirm {
+    background: green;
+    color: white;
+    font-weight: bold;
+  }  
+  .text.child {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+  }
+  
+  div.text {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 100;
+  }
+
+ 
+  /*
+  El primer error es que el elemento .para debe estar antes que el .small-para ya que 
+  tienen la misma especificidad y se aplica la última que se encuentra en el CSS. Una vez solucionado, 
+  el parrafo 2 va a ser mas chico. 
+  El segundo error es que el elemento button debe estar antes que el elemnto confirm, es por la misma 
+  razon mencionada anteriormente, una vez hecho el cambio el boton confirm adquiere el color verde. 
+  El tercer error es que el elemento .text.child antes estaba denominado como .child y por eso 
+  no se aplicaban los correspondientes estilos . 
+  */
